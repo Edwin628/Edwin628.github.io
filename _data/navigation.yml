@@ -11,12 +11,12 @@
 # -----------------
 en: &DEFAULT_EN
   nav:
-    - title: "Services"
-      section: services
-    - title: "About"
-      section: about
+    - title: "Overlook"
+      section: ivan
     - title: "Topics"
       section: topics
+    - title: "World"
+      section: world
     - title: "Team"
       section: team
     - title: "Code Source"

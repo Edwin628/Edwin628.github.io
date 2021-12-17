@@ -48,123 +48,131 @@ en: &DEFAULT_EN
         icon: fas fa-laptop
         img: "./assets/img/quoteppl/Annise_Parker.jpeg"
 
-  portfolio:
-    title: "Portfolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    section: portfolio
-    closebutton: "Close Project"
-
-  timeline:
-    title: "Timeline"
-    text: "Lorem ipsum timeline"
-    section: timeline
-    # left is the default
-    #start_align: "left"
-    events:
-      - title: "Our Humble Beginnings"
-        year: "2009-2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/1.jpg
-        alt:
-      - title: "An Agency is Born"
-        year: "March 2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/2.jpg
-        alt:
-      - title: "Jekyll Theme is created"
-        year: "2019"
-        desc: "Ravi Riley converted Agency, a Bootstrap-based theme, into a Jekyll theme. The Jekyll theme can be installed as a Ruby gem, or remotely. For more information, visit the documentation."
-        image: assets/img/timeline/3.jpg
-        alt: image alt text
-      - title: "Title"
-        year: "2009-2011"
-        desc: "Your description here, **Markdown** is fully supported."
-        image: assets/img/timeline/4.jpg
-        alt:
-        # you can enforce the alignment
-        align: right
-    end: "Be Part <br> of Our <br> Story!"
-
   about:
-    title: "About Us"
-    text: "our story"
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
+    title: "LGBTQ data story"
+    text: "It matters to you and me"
+    body: "Do you know how many countries are still criminalizing consensual same-sex activity? Can you imagine being maliciously insulted just for pursuing love? Those are the things LGBTQ people are going through. Today we will utilize several datasets to take you deeper into this community, explore the causes of their injustice situation, and study possible ways to create a better world for this minority group."
+    title_1: "Storyline"
+    body_1: ""
+    section: about
+  
+  header_ivan:
+    text: "What is inside the quotations"
+
+  ivan:
+    title_0: "Let's take a look"
+
+    body_1_0: "
+    The words of important people in society have a great influence on the public and represent to some extent the current ideology in society. Unexpected information can be acquired through studying those words. In this and the next chapters, we will use the Quotebank dataset to study the words of famous speakers from 2015 and 2020. First, let's have an overview of how people think of this minority group over the years. Have all the efforts and social campaigns made a difference?
+    
+    
+    To explore the pattern of speakers' attitudes toward the LGBTQ group, we carry out sentiment analysis on those quotations, and the results are shown in the following pie charts.  
+    "
+
+    body_1_1: "
+    From those plots, we can see that the portion of negative attitudes is almost always higher than the portion of positive attitudes, which means most people in the world still cannot fully accept this minority group. The small \"triumph\" of positive over negative in 2020 can be a result of the lack of data in 2020. However, things are getting better. The negative proportion is decreasing while the positive proportion is increasing from 2018 to 2020.
+    "
+
+    title_1: "What about the speakers?"
+    
+    body_1_2: "
+    Now let's look more in detail into the speakers. How do speakers from different groups think about LGBTQ people? We now divide the speakers into different groups according to some specific features (age, nationality, gender, ethnic group, occupation, and religion), and study the change of their attention on this topic over the years. We calculate attention according to the frequency of people talking about this topic.
+    "
+
+    body_1_3: "
+    From the plots, we can see several interesting results. When studying speakers' age, we divide the people into three groups. We find that the middle-aged group cares the most about the LGBTQ topic, and their proportion has been increasing over the years. This can be explained by the fact that most of the famous speakers who are authorities or representatives of their areas are in their midlife, it is their responsibility to pay more attention to this sensitive topic. Besides, let's focus on the ethnic group, and we find that African Americans pay the most attention to this topic, overpassing other groups a lot. This may result from the African American group's unjust treatment in the US, which makes them more concerned about social equality.
+    "
+
+    body_1_4: "
+    After examining the trend of each group's attention towards the LGBTQ group, we now move on to see the change of distribution of people's attitudes toward that topic over the years. We plot the following graph for analysis, the x-axis means the feature we choose (date of birth, gender, nationality, and so on), each bar represents a kind of feature value in each group. For features with more than 10 values, we just choose the top 10 kinds. The y axis stands for the proportion of each emotion of this group.
+    
+    
+    As is shown in the emotion distribution in different ages, we can see that most of the positive attitudes holders are young people, which is a good sign for the LGBTQ group since some of the young people will become important people in different areas and eventually make positive changes to improve the situation of the LGBTQ group. 
+    
+    
+    In the emotion distribution among different nationalities, we can find some interesting facts: people from Israel usually have negative attitudes towards the LGBTQ community, while Ireland people tend to think in a positive way of the group. And then we focus on the top 3 countries that have the most attention, i.e. US, UK, Canada. We can find that, in the US, negative emotion is usually overpassing positive emotion. In the UK, the proportion of positive emotion has been increasing. In Canada, the negative emotion and positive emotion proportions are close.
+    
+    
+    Some interesting facts pop out when studying the speakers' occupation. Most politicians, writers, lawyers, and journalists have negative emotions towards the LGBTQ community, while the people whose jobs are related to TV or film, like actors, singers, film producers, and so on, usually have positive attitudes toward LGBTQ.
+    
+    
+    Finally, let's focus on the speakers' religion, especially on the Judaism and Catholic Church. We can see that the negative emotion ratio is so large in these two groups. In 2017, their negative emotion ratio is 70%, which is more than the average negative emotion ratio (46.2%).
+    "
+
     section: about
 
   topics:
     # title: "About Us"
     # text: "our story"
-    body_0: "After the sentiment analysis, we could observe some pattern from different individual groups. However, this is not enough, as we can not be sure about what caused the sentiment to be positive and negative. In other words, we want to dig out the problems and events that is hidden behind those emotions, to see how they are related to LGBTQ, and from these problems we are able to start the journey of searching for possible solutions to build a better LGBTQ-friendly community. 
+    body_0: "After the sentiment analysis, we can observe some patterns from different individual groups. However, this is not enough, as we can not be sure about what resulted in those emotions. In other words, we want to dig out the problems and events that are hidden behind those emotions, to see how they are related to LGBTQ, and from these problems, we are able to start the journey of searching for possible solutions to build a better LGBTQ-friendly community. 
 
-
-    Therefore, here we aim at a bigger scope to **analyze the topics that co-occur with LGBTQ**. Instead of what we have done in the frequent topic extraction phase, here we want to be more precise and convincing about the topics that we extracted. Further, we want give more reasoning to them, and one way for doing this is to use topic aggregations. Here we directly apply the intergrated API as [**BERT-Topic**](https://maartengr.github.io/BERTopic/), whose method scheme is as follows:
+    Therefore, here we aim at a bigger scope to **analyze the topics that co-occur with LGBTQ**. In this part we want to be more precise and convincing about the topics that we extracted. Further, we want to use topic aggregations to have deeper understanding of the possible reasons. Here we directly apply the integrated API as [**BERT-Topic**](https://maartengr.github.io/BERTopic/), whose method scheme is as follows:
 
     1. Gather LGBTQ quotations as one document (lists of quotations)
 
-    2. Performing text embedding using Transformer language models (with pretrained weight loaded)
+    2. Perform text embedding using Transformer language models (with pre-trained weight loaded)
 
     3. Apply aggregation algorithm to text embeddings using UMAP (for dimension reduction) and HDBSAN (for clustering) algorithm
 
     4. extract topics using class-based TF-IDF algorithm
-    
 
-    After extracting the topics, we sort them by the frequency each topic appeared in the quotations. Then we chose the top-17 most related ones, each of which is represented by a set of words following weighted distributions. Then we assign each of the cluster a meaningful name.
+ 
 
+    After extracting the topics, we sort them by the frequency each topic appeared in the quotations. Then we chose the top-17 most related ones, each of which is represented by a set of words following weighted distributions. Then we assign each of the clusters a meaningful name.
 
-    Here we give three example of word-represented topics as \"\"
+    Here we give three examples of word-represented topics:
     "
 
     # Topic Proportion
     title_1_0: "How people pay attention to these topics?"
     body_1_0: "
-    Firstly, we want to see what portion each topic hold, which reveals which topic are more or less paid attention by the speakers:
+    Firstly, we want to see what portion each topic shares, through which we can see in details what topics people care about the most.
     "
 
     body_1_1: "
-    From above we see, the \"Politics\" topic are most frequently talked, as maybe the most efficient and direct way to solve the LGBTQ problems is legislation and promulgation of policies to to protect the rights of the LGBTQ community. We can also observe several LGBTQ-related problems from these topics, such as \"Foster\", \"Health\", \"Homeless\", \"HIV\", and \"Suicide\", which we will discuss more latter. 
+    From the above plot, we can see that the \"Politics\" topic is talked about the most frequently, as may be the most efficient and direct way to solve the LGBTQ people's problems is through legislation and promulgation of policies to protect the rights of the LGBTQ community. We can also observe several LGBTQ-related problems from these topics, such as \"Foster\", \"Health\", \"Homeless\", \"HIV\", and \"Suicide\", which we will discuss more later. Before we go deeper into the above topics, let's take a look at the speakers behind these topics. Here we chose the **top 20 people** with frequent LGBTQ-related topic quotations, and compute the portions of quotations they hold:
     "
     # Speaker Proportion
     title_2_0: "Who is behind these topics?"
     body_2_0: "
-    Before we go deeper into the above topics, let's take a look at who are the speakers behind these topics. Here we chose the **top 20 people** with frequent LGBTQ-related topic quotations, and compute the portions of quotations they hold:
+    Before we go deeper into the above topics, let's take a look at the speakers behind these topics. Here we chose the **top 20 people** with frequent LGBTQ-related topic quotations, and compute the portions of quotations they hold:
     "
 
     body_2_1: "
-    Most of these names may not familiar to you (except two famous persons in Quotebank -- Donald Trump and Hillary Clinton), but actually, most of them have something to do the LGBTQ community:
+    Most of these names may not be familiar to you (except two famous persons in Quotebank -- Donald Trump and Hillary Clinton),
     "
 
     # Speaker-topic Proportion
     title_3_0: "How famous people care about famous topics?"
     body_3_0: "
-    We also want to know how does each of these famous LGBTQ topic-related speakers pay attention to the top LGBTQ-related topics, and here we depict the top-10 person with portions for each topics:
+  We also want to know how does each of these famous LGBTQ topic-related speakers pay attention to the top LGBTQ-related topics, and here we depict the top-10 persons with portions for each topic:
     "
 
     body_3_1: "
-    It is interesting that these famous speakers' attention **does not follow** the overall topic attention proportion. For example, \"Foster\" problem are more frequently discussed than \"Politics\" problem, where the latter is the top-1 topic during our previous analysis. And the overall relatively cold topic \"Fight\" (which related to \"Fighting for LGBTQ Rights\") is much more frequently talked by these famous people. 
+    It is interesting that these famous speakers' attention **does not follow** the overall topic attention proportion. For example, \"Foster\" problems are more frequently discussed than \"Politics\" problems, where the latter is the top-1 topic in our previous analysis. And the overall less heated topic \"Fight\" (which is related to \"Fighting for LGBTQ Rights\") is much more frequently talked about by these famous people. 
 
-
-    Besides, some people show **preference** toward certain topics, such as Dwyane Wade has more quotations related to problems such as \"Homeless\" and \"Foster\", while who hardly talks about \"Politics\"-related LGBTQ topics. 
+    Besides, some people show **preference** toward certain topics, such as Dwyane Wade has more quotations relevant to problems such as \"Homeless\" and \"Foster\", while hardly talking about \"Politics\"-related LGBTQ topics. 
     "
 
     # Topic over time
     title_4_0: "How these topics change over time?"
     body_4_0: "
-    After seeing \"what\" are the LGBTQ-related topics and from \"who\" these topics are discussed, now we want to see \"when\" these topics are talked, and how the attention evolves over the time:    
+    After seeing \"what\" are the LGBTQ-related topics and by \"who\" these topics are discussed, now we want to see \"when\" these topics are talked about, and how the attention evolves over time:
     "
 
     body_4_1: "
-    As we can see, the order of topics' frequentcy over the last five years mostly follow the distribution of their overall portions in the quotations. We also observe a interesting pattern that the frequency for all these topics increases during March to May, while there is a surge in political topics near the end of 2018.
+    As we can see, the order of topics' frequency over the last five years mostly follows the distribution of their overall portions in the quotations. We also observe an interesting pattern that the frequency of all these topics increases from March to May, and there is a surge of political topics near the end of 2018.
     "
 
     # Topic over time
     title_5_0: "What problems is behind the topics?"
     body_5_0: "
-    Now we go back to the initial problem -- what is the problems and events that is behind these topics? And how many attention they have been paid to? What are the problems that are relatively neglected? To directly inspect these questions, we build a topic network for each topic clusters, and give each node a weight as:
+    Now we go back to the initial problem -- what are the problems and events that are behind these topics? And how much attention they have drawn? What problems have been relatively neglected? To directly inspect these questions, we build a topic network for each topic cluster and give each node a weight as:
     "
     body_5_1: "
-    where Topic_Freq is the overall topic frequency over the whole QuoteBank dataset from year 2015 to 2020, and the Word_Prob refer to the word distribution probability among the topic.
-    
-    
+    where Topic_Freq is the overall topic frequency over the whole QuoteBank dataset from the year 2015 to 2020, and the Word_Prob refers to the word distribution probability among the topic.
+
+
     And we build the connection between nodes following the word embedding clusters given by the HDBCAN clustering algorithm from BertTopic Model. Finally, we obtain the network like this:
     "
 
