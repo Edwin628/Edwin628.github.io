@@ -51,7 +51,10 @@ en: &DEFAULT_EN
   about:
     title: "LGBTQ data story"
     text: "It matters to you and me"
-    body: "Do you know how many countries are still criminalizing consensual same-sex activity? Can you imagine being maliciously insulted just for pursuing love? Those are the things LGBTQ people are going through. Today we will utilize several datasets to take you deeper into this community, explore the causes of their injustice situation, and study possible ways to create a better world for this minority group."
+    body: "Do you know how many countries are still criminalizing consensual same-sex activity? Can you imagine being maliciously insulted just for pursuing love? Those are the things LGBTQ people are going through: for instance, only 24% of countries allowed for Same-sex marriage, nearly 95% of countries do not have constitutional protections toward LGBTQ, only 22.1% of countries allowed for Joint Adoption for LGBTQ couples. Therefore, it is meaningful to analyse the reasons behind those phenomenons.
+
+    
+Today we will utilize several datasets to take you deeper into this community, explore the causes of their injustice situation, and study possible ways to create a better world for this minority group."
     title_1: "Storyline"
     body_1: ""
     section: about
@@ -99,7 +102,7 @@ en: &DEFAULT_EN
     Finally, let's focus on the speakers' religion, especially on the Judaism and Catholic Church. We can see that the negative emotion ratio is so large in these two groups. In 2017, their negative emotion ratio is 70%, which is more than the average negative emotion ratio (46.2%).
     "
 
-    section: about
+    section: ivan
 
   topics:
     # title: "About Us"
@@ -278,48 +281,43 @@ Therefore, let's take a look at the policy and laws in different countries towar
     max-height: 100px
     horizontal-scrolling: "yes" #"yes/no"
     list:
-      - title: "envato"
+      - title: "ada"
         url: https://dlab.epfl.ch/teaching/fall2021/cs401/
         logo: assets/img/clients/dlab.svg
-      - title: "designmodo"
+      - title: "jekyll theme"
         url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/designmodo.jpg
-      - title: "themeforest"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/themeforest.jpg
-      - title: "Creative Market"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/creative-market.jpg
+        logo: assets/img/clients/github.jpeg
+      - title: "quatebank"
+        url: https://zenodo.org/record/4277311#.Yb0F7n2ZMZk
+        logo: assets/img/clients/quotebannk.jpg
 
   team:
     title: "OUR AMAZING TEAM"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
     section: team
     people:
       - name: "Guosheng Feng"
         role: "Lead Designer"
-        image: assets/img/team/500x500.jpg
+        image: assets/img/team/fgs.png
         social:
-          - url: https://twitter.com
+          - url: https://github.com/elenathFGS
             icon: fab fa-github
       - name: "Yifeng Chen"
         role: "Lead Marketer"
-        image: assets/img/team/2.jpg
+        image: assets/img/team/cyf.jpg
         social:
-          - url: https://twitter.com
+          - url: https://github.com/IvanChen777
             icon: fab fa-github
       - name: "Duo Xu"
         role: "Lead Developer"
-        image: assets/img/team/500x500.jpg
+        image: assets/img/team/xd.jpg
         social:
-          - url: https://twitter.com
+          - url: https://github.com/hoodiney
             icon: fab fa-github
       - name: "Aibin Yu"
         role: "Lead Developer"
-        image: assets/img/team/500x500.jpg
+        image: assets/img/team/yab.jpg
         social:
-          - url: https://twitter.com
+          - url: https://github.com/Edwin628
             icon: fab fa-github
 
   contact:
