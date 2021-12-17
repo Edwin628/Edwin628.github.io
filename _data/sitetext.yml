@@ -13,7 +13,6 @@ en: &DEFAULT_EN
   header:
     title: Do not hesitate 
     text: Let the rainbow shining!
-    button: Tell Me More
     buttonlink: "#services"
 
   header_topic:
@@ -55,7 +54,7 @@ en: &DEFAULT_EN
 
 
 Today we will utilize several datasets to take you deeper into this community, explore the causes of their injustice situation, and study possible ways to create a better world for this minority group."
-    title_1: "Storyline"
+    # title_1: "Storyline"
     body_1: ""
     section: about
   
@@ -319,25 +318,21 @@ We are aware that even with these discoveries, there is no quick fix for this pr
     section: team
     people:
       - name: "Guosheng Feng"
-        role: "Lead Designer"
         image: assets/img/team/fgs.png
         social:
           - url: https://github.com/elenathFGS
             icon: fab fa-github
       - name: "Yifeng Chen"
-        role: "Lead Marketer"
         image: assets/img/team/cyf.png
         social:
           - url: https://github.com/IvanChen777
             icon: fab fa-github
       - name: "Duo Xu"
-        role: "Lead Developer"
         image: assets/img/team/xd.png
         social:
           - url: https://github.com/hoodiney
             icon: fab fa-github
       - name: "Aibin Yu"
-        role: "Lead Developer"
         image: assets/img/team/yab.png
         social:
           - url: https://github.com/Edwin628
