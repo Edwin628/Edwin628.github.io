@@ -53,7 +53,7 @@ en: &DEFAULT_EN
     text: "It matters to you and me"
     body: "Do you know how many countries are still criminalizing consensual same-sex activity? Can you imagine being maliciously insulted just for pursuing love? Those are the things LGBTQ people are going through: for instance, only 24% of countries allowed for Same-sex marriage, nearly 95% of countries do not have constitutional protections toward LGBTQ, only 22.1% of countries allowed for Joint Adoption for LGBTQ couples. Therefore, it is meaningful to analyse the reasons behind those phenomenons.
 
-    
+
 Today we will utilize several datasets to take you deeper into this community, explore the causes of their injustice situation, and study possible ways to create a better world for this minority group."
     title_1: "Storyline"
     body_1: ""
@@ -63,44 +63,44 @@ Today we will utilize several datasets to take you deeper into this community, e
     text: "What is inside the quotations"
 
   ivan:
-    title_0: "Let's take a look"
+    title_0: "Let's take a look of the Sentiment"
 
     body_1_0: "
-    The words of important people in society have a great influence on the public and represent to some extent the current ideology in society. Unexpected information can be acquired through studying those words. In this and the next chapters, we will use the Quotebank dataset to study the words of famous speakers from 2015 and 2020. First, let's have an overview of how people think of this minority group over the years. Have all the efforts and social campaigns made a difference?
-    
-    
-    To explore the pattern of speakers' attitudes toward the LGBTQ group, we carry out sentiment analysis on those quotations, and the results are shown in the following pie charts.  
+    The words of important people in society have a great influence on the public and represent to some extent the current ideology in society. Unexpected information can be acquired through studying those words. In this and the next chapters, we will use the Quotebank dataset to study the words of famous speakers **from 2015 and 2020**. First, let's have an overview of how people think of this minority group over the years. Have all the efforts and social campaigns made a difference?
+
+
+To explore the pattern of speakers' attitudes toward the LGBTQ group, we carry out **sentiment analysis** on those quotations, and the results are shown in the following pie charts.   
     "
 
     body_1_1: "
-    From those plots, we can see that the portion of negative attitudes is almost always higher than the portion of positive attitudes, which means most people in the world still cannot fully accept this minority group. The small \"triumph\" of positive over negative in 2020 can be a result of the lack of data in 2020. However, things are getting better. The negative proportion is decreasing while the positive proportion is increasing from 2018 to 2020.
+From those plots, we can see that the portion of negative attitudes is almost always higher than the portion of positive attitudes. The small \"triumph\" of positive over negative in 2020 can be a result of the lack of data. However, things are getting better. **The negative proportion is decreasing while the positive proportion is increasing from 2018 to 2020.**
     "
 
     title_1: "What about the speakers?"
     
     body_1_2: "
-    Now let's look more in detail into the speakers. How do speakers from different groups think about LGBTQ people? We now divide the speakers into different groups according to some specific features (age, nationality, gender, ethnic group, occupation, and religion), and study the change of their attention on this topic over the years. We calculate attention according to the frequency of people talking about this topic.
+    Now let's look more in detail into the speakers. How do speakers from different groups think about LGBTQ people? We now divide the speakers into different groups according to some specific features (age, nationality, gender, ethnic group, occupation, and religion), and study the change of their attention on this topic over the years. 
     "
 
     body_1_3: "
-    From the plots, we can see several interesting results. When studying speakers' age, we divide the people into three groups. We find that the middle-aged group cares the most about the LGBTQ topic, and their proportion has been increasing over the years. This can be explained by the fact that most of the famous speakers who are authorities or representatives of their areas are in their midlife, it is their responsibility to pay more attention to this sensitive topic. Besides, let's focus on the ethnic group, and we find that African Americans pay the most attention to this topic, overpassing other groups a lot. This may result from the African American group's unjust treatment in the US, which makes them more concerned about social equality.
+From the plots, we can see several interesting results. When studying speakers' age, we divide the people into three groups. We find that the middle-aged group cares the most about the LGBTQ topic, and their proportion has been increasing over the years. This can be explained by the fact that most of the famous speakers who are authorities or representatives of their areas are in their midlife, it is their responsibility to pay more attention to this sensitive topic. Besides, let's focus on the ethnic group, and we find that African Americans pay the most attention to this topic, overpassing other groups a lot. This may result from the African American group's unjust treatment in the US, which makes them more concerned about social equality.
+
+
+we now move on to see the change of distribution of people's attitudes toward that topic over the years. We plot the following graph for analysis, the x-axis means the feature we choose (date of birth, gender, nationality, and so on), each bar represents a kind of feature value in each group. For features with more than 10 values, we just choose the top 10 kinds. The y axis stands for the proportion of each emotion of this group.
     "
 
     body_1_4: "
-    After examining the trend of each group's attention towards the LGBTQ group, we now move on to see the change of distribution of people's attitudes toward that topic over the years. We plot the following graph for analysis, the x-axis means the feature we choose (date of birth, gender, nationality, and so on), each bar represents a kind of feature value in each group. For features with more than 10 values, we just choose the top 10 kinds. The y axis stands for the proportion of each emotion of this group.
-    
-    
-    As is shown in the emotion distribution in different ages, we can see that most of the positive attitudes holders are young people, which is a good sign for the LGBTQ group since some of the young people will become important people in different areas and eventually make positive changes to improve the situation of the LGBTQ group. 
-    
-    
-    In the emotion distribution among different nationalities, we can find some interesting facts: people from Israel usually have negative attitudes towards the LGBTQ community, while Ireland people tend to think in a positive way of the group. And then we focus on the top 3 countries that have the most attention, i.e. US, UK, Canada. We can find that, in the US, negative emotion is usually overpassing positive emotion. In the UK, the proportion of positive emotion has been increasing. In Canada, the negative emotion and positive emotion proportions are close.
-    
-    
-    Some interesting facts pop out when studying the speakers' occupation. Most politicians, writers, lawyers, and journalists have negative emotions towards the LGBTQ community, while the people whose jobs are related to TV or film, like actors, singers, film producers, and so on, usually have positive attitudes toward LGBTQ.
-    
-    
-    Finally, let's focus on the speakers' religion, especially on the Judaism and Catholic Church. We can see that the negative emotion ratio is so large in these two groups. In 2017, their negative emotion ratio is 70%, which is more than the average negative emotion ratio (46.2%).
-    "
+    As is shown in the emotion distribution in different ages, we can see that most of the positive attitudes holders are young people.
+
+
+In the emotion distribution among different nationalities, we can find some interesting facts: people from Israel usually have negative attitudes towards the LGBTQ community, while Ireland people tend to think in a positive way of the group. And then we focus on the top 3 countries that have the most attention, i.e. **US, UK, Canada**. We can find that, in the US, negative emotion is usually overpassing positive emotion. In the UK, the proportion of positive emotion has been increasing. In Canada, the negative emotion and positive emotion proportions are close.
+
+
+Some interesting facts pop out when studying the speakers' occupation. Most politicians, writers, lawyers, and journalists have **negative** emotions towards the LGBTQ community, while the people whose jobs are related to TV or film, like actors, singers, film producers, and so on, usually have **positive** attitudes toward LGBTQ.
+
+
+Finally, let's focus on the speakers' religion, especially on the Judaism and Catholic Church. We can see that the negative emotion ratio is so large in these two groups. In 2017, their negative emotion ratio is 70%, which is more than the average negative emotion ratio (**46.2%**).
+  "
 
     section: ivan
 
@@ -272,6 +272,29 @@ Therefore, let's take a look at the policy and laws in different countries towar
     body_3_4: "
     Here the trend is more clear, **both education levels have positive coefficient with LGBTQ acceptance scores**. And if we look at the countries with more than 80% 25+ population received at least secondary education, there is only **1** country with negative acceptance score, while all other **18** countries are all LGBTQ-friendly.
     "
+
+    end_title: "End of the story"
+
+    end: "
+    Finally, the story is coming to the end, and we want to make several conclusions:
+
+
+Firstly, people's attention towards the LGBTQ community is not enough, lots of efforts are needed to build a more caring world.
+
+
+Secondly, in general, most people still have a negative attitude towards the LGBTQ group. However, the situation is getting better, which is a good sign.
+
+
+Thirdly, based on the topic analysis around Quotebank, there still exists plenty of disparities in mental and physical health that LGBTQ groups would face, several efforts are required to improve current situations.
+
+
+Then We find two potential factors that can be used to improve this situation:
+1. most regions in the world with higher GDP level have LGBTQ acceptance level. We assume that, countries with better finantial situation are more likely to establish policies that could help build a LGBTQ-friendly society.
+2. people from countries with higher average education levels will treat LGBTQ people more friendly. This means that education can play an important role in helping improve the situation of the LGBTQ community, such as the LGBTQ-involvement education that has been more and more adopted by countries to educate the new generations for the awareness of equatily and diversity.
+
+
+We are aware that even with these discoveries, there is no quick fix for this problem. Still, we hope that these findings will serve as a source of inspiration. Just like Harvey Milk once said, \"We are powerful because we have survived\".
+    "
     section: world
 
 # ----------------------------- Client Section -----------------------------
@@ -303,19 +326,19 @@ Therefore, let's take a look at the policy and laws in different countries towar
             icon: fab fa-github
       - name: "Yifeng Chen"
         role: "Lead Marketer"
-        image: assets/img/team/cyf.jpg
+        image: assets/img/team/cyf.png
         social:
           - url: https://github.com/IvanChen777
             icon: fab fa-github
       - name: "Duo Xu"
         role: "Lead Developer"
-        image: assets/img/team/xd.jpg
+        image: assets/img/team/xd.png
         social:
           - url: https://github.com/hoodiney
             icon: fab fa-github
       - name: "Aibin Yu"
         role: "Lead Developer"
-        image: assets/img/team/yab.jpg
+        image: assets/img/team/yab.png
         social:
           - url: https://github.com/Edwin628
             icon: fab fa-github
