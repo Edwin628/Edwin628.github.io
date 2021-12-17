@@ -11,28 +11,42 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: Welcome to our Studio!
-    text: It's Nice To Meet You
+    title: Do not hesitate 
+    text: Let the rainbow shining!
+    button: Tell Me More
+    buttonlink: "#services"
+
+  header_topic:
+    # title: Welcome to our Studio!
+    text: What are the topics around LGBTQ?
+    button: Tell Me More
+    buttonlink: "#services"
+
+  header_world:
+    text: Situation around the world
     button: Tell Me More
     buttonlink: "#services"
 
   services:
     title: "Services"
-    text: "Lorem ipsum"
+    text: "Three LGBTQ activists in QuoteBank"
     section: services
     list:
       - title: "Sarah Kate Ellis"
-        desc: "This loss is a wake-up call that despite remarkable progress for LGBT equality, we must never become complacent in the face of injustice."
+        subtitle: "Ellis was appointed president and CEO of GLAAD, the nation's largest lesbian, gay, bisexual, and transgender (LGBT) media advocacy organization."
+        desc: "\"This loss is a wake-up call that despite remarkable progress for LGBT equality, we must never become complacent in the face of injustice.\""
         icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
         img: "./assets/img/quoteppl/Sarah_Kate.png"
+      - title: "Chad Griffin"
+        subtitle: "Griffin served as president of the Human Rights Campaign, the largest LGBT rights organization in the United States"
+        desc: "\"We will also continue our efforts to advance critically-needed protections at the state, local, and ultimately the federal level for LGBT people all across this country.\""
+        icon: fab fa-markdown
+        img: "./assets/img/quoteppl/Chad_Griffin.jpg"
       - title: "Annise Parker"
-        desc: "What a joyous, historic day for America, the LGBT community, individual families, the institution of marriage and the fight for equality. I used to think that I would not see this day in my lifetime."
+        subtitle: "Annise Parker was the first openly LGBTQ mayor of a major American city."
+        desc: "\"What a joyous, historic day for America, the LGBT community, individual families, the institution of marriage and the fight for equality. I used to think that I would not see this day in my lifetime.\""
         icon: fas fa-laptop
         img: "./assets/img/quoteppl/Annise_Parker.jpeg"
-      - title: "Caitlyn Jenner"
-        desc: "I am here to help the -- since I'm on the Republican side -- to help the entire Republican party do a better job when it comes to LGBT issues,"
-        icon: fab fa-markdown
-        img: "./assets/img/quoteppl/Caitlyn_Jenner.jpeg"
 
   portfolio:
     title: "Portfolio"
@@ -77,23 +91,191 @@ en: &DEFAULT_EN
     body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
     section: about
 
-  aboutx:
-    title: "About Us"
-    text: "our story"
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
-    section: aboutx
+  topics:
+    # title: "About Us"
+    # text: "our story"
+    body_0: "After the sentiment analysis, we could observe some pattern from different individual groups. However, this is not enough, as we can not be sure about what caused the sentiment to be positive and negative. In other words, we want to dig out the problems and events that is hidden behind those emotions, to see how they are related to LGBTQ, and from these problems we are able to start the journey of searching for possible solutions to build a better LGBTQ-friendly community. 
+
+
+    Therefore, here we aim at a bigger scope to **analyze the topics that co-occur with LGBTQ**. Instead of what we have done in the frequent topic extraction phase, here we want to be more precise and convincing about the topics that we extracted. Further, we want give more reasoning to them, and one way for doing this is to use topic aggregations. Here we directly apply the intergrated API as [**BERT-Topic**](https://maartengr.github.io/BERTopic/), whose method scheme is as follows:
+
+    1. Gather LGBTQ quotations as one document (lists of quotations)
+
+    2. Performing text embedding using Transformer language models (with pretrained weight loaded)
+
+    3. Apply aggregation algorithm to text embeddings using UMAP (for dimension reduction) and HDBSAN (for clustering) algorithm
+
+    4. extract topics using class-based TF-IDF algorithm
+    
+
+    After extracting the topics, we sort them by the frequency each topic appeared in the quotations. Then we chose the top-17 most related ones, each of which is represented by a set of words following weighted distributions. Then we assign each of the cluster a meaningful name.
+
+
+    Here we give three example of word-represented topics as \"\"
+    "
+
+    # Topic Proportion
+    title_1_0: "How people pay attention to these topics?"
+    body_1_0: "
+    Firstly, we want to see what portion each topic hold, which reveals which topic are more or less paid attention by the speakers:
+    "
+
+    body_1_1: "
+    From above we see, the \"Politics\" topic are most frequently talked, as maybe the most efficient and direct way to solve the LGBTQ problems is legislation and promulgation of policies to to protect the rights of the LGBTQ community. We can also observe several LGBTQ-related problems from these topics, such as \"Foster\", \"Health\", \"Homeless\", \"HIV\", and \"Suicide\", which we will discuss more latter. 
+    "
+    # Speaker Proportion
+    title_2_0: "Who is behind these topics?"
+    body_2_0: "
+    Before we go deeper into the above topics, let's take a look at who are the speakers behind these topics. Here we chose the **top 20 people** with frequent LGBTQ-related topic quotations, and compute the portions of quotations they hold:
+    "
+
+    body_2_1: "
+    Most of these names may not familiar to you (except two famous persons in Quotebank -- Donald Trump and Hillary Clinton), but actually, most of them have something to do the LGBTQ community:
+    "
+
+    # Speaker-topic Proportion
+    title_3_0: "How famous people care about famous topics?"
+    body_3_0: "
+    We also want to know how does each of these famous LGBTQ topic-related speakers pay attention to the top LGBTQ-related topics, and here we depict the top-10 person with portions for each topics:
+    "
+
+    body_3_1: "
+    It is interesting that these famous speakers' attention **does not follow** the overall topic attention proportion. For example, \"Foster\" problem are more frequently discussed than \"Politics\" problem, where the latter is the top-1 topic during our previous analysis. And the overall relatively cold topic \"Fight\" (which related to \"Fighting for LGBTQ Rights\") is much more frequently talked by these famous people. 
+
+
+    Besides, some people show **preference** toward certain topics, such as Dwyane Wade has more quotations related to problems such as \"Homeless\" and \"Foster\", while who hardly talks about \"Politics\"-related LGBTQ topics. 
+    "
+
+    # Topic over time
+    title_4_0: "How these topics change over time?"
+    body_4_0: "
+    After seeing \"what\" are the LGBTQ-related topics and from \"who\" these topics are discussed, now we want to see \"when\" these topics are talked, and how the attention evolves over the time:    
+    "
+
+    body_4_1: "
+    As we can see, the order of topics' frequentcy over the last five years mostly follow the distribution of their overall portions in the quotations. We also observe a interesting pattern that the frequency for all these topics increases during March to May, while there is a surge in political topics near the end of 2018.
+    "
+
+    # Topic over time
+    title_5_0: "What problems is behind the topics?"
+    body_5_0: "
+    Now we go back to the initial problem -- what is the problems and events that is behind these topics? And how many attention they have been paid to? What are the problems that are relatively neglected? To directly inspect these questions, we build a topic network for each topic clusters, and give each node a weight as:
+    "
+    body_5_1: "
+    where Topic_Freq is the overall topic frequency over the whole QuoteBank dataset from year 2015 to 2020, and the Word_Prob refer to the word distribution probability among the topic.
+    
+    
+    And we build the connection between nodes following the word embedding clusters given by the HDBCAN clustering algorithm from BertTopic Model. Finally, we obtain the network like this:
+    "
+
+    body_5_w: "
+    Here each node in this network could represent one or more LGBTQ-related quotations (you can hover on them to see examples). And we could see that some problems such as \"Mental Health\" could contain some worth-noted sub-topics such as \"therapy\" and \"abuse\". And some topics are actually related to others, such as the \"suicide\" problem is actually related to \"mental health\" and \"teens\" (you can see the orange \"suicide\" node at lower right connected with \"Mental Health\" node, and the pink teens node in the lower left contected with the \"Suicide\" node).
+
+
+    So, after witnessing all these issues, we want to know why these happens in our human society, further, we want to discuss about possible solutions. 
+
+
+    Unfortunately, there's only so much that our old friend QuoteBank can do for us, and in the belowing story, we would like to introducing **two new dataset**:
+    
+
+    * [**WorldBank**](https://data.worldbank.org/):
+
+
+      \  WorldBank data contains various of statistical data from different countries and regions over the world, such as economy, education, employment, environment and population. This dataset maintains a number of macro, financial and sector databases where much of the them comes from the statistical systems of [member countries](http://www.worldbank.org/en/about/leadership/members).
+
+
+      \  We mainly use worldbank data for analyzing the factors that lead to different acceptance levels towards LGBTQ community of different countries and regions.
+
+
+    * [**Sexual Orientation Laws in the World**](https://www.kaggle.com/mpwolke/cusersmarildownloadsomophobiacsv):
+
+
+    \  This dataset maintains different LGBTQ-related national policies of different countries, such as same-sex marriage, conversion therapy, penalty, adoption & fostering and employment protection of LGBTQ people. The data mainly from ILGA World along with the State-Sponsored Homophobia report.
+
+
+    \  We use this dataset for evaluating LGBTQ acceptance levels of different countries. By quantifying the policies into scores, we combine this with the WorldBank dataset for regression analysis of different factors.
+
+  
+
+with the help of these two datasets, we could follow the clues we find so far from QuoteBank to dig deeper and finally find the truth behind all these quotations.
+    "
+
+    section: topics
+
+#----------------------------------------- world section ------------------------------------#
+  world:
+
+    body_0: "
+    From the analysis during last section, we see that some topics are frequently discussed, and the most frequent topic cluster is about politics, as we could guess that the most efficient way to solve the inequality and discrimination problem toward LGBTQ group is enacting policies and legislation. And **a LGBTQ-friendly policy system is perhaps the very first step for dealing with other LGBTQ-related social issues**, such as:
+
+* Homeless: LGBTQ Employement Protection
+
+* Foster: Adoption open to same-sex couples
+
+* Health: Social welfare policy
+
+* Family recognition: Marriage or other foms of legal union for LGBTQ persons.
+
+
+Therefore, let's take a look at the policy and laws in different countries toward LGBTQ, analyze factors that may affect such policies and finally try to find some workable solutions to build a better LGBTQ-friendly society.
+    "
+
+    title_1_0: "Policies of different concerns"
+    body_1_0: "
+    First of all, we want to give a overview of the 9 LGBTQ-related policies with respect to countries and regions, to roughly evaluate the acceptance level our world toward LGBTQ communities.
+    "
+    body_1_1: "
+    It's disappointing to see that the situation here is not optimistic. For example, nealy **95%** countries do not have constitutional protections toward LGBTQ, only **24%** countries allowed for Same-Sex Marriage, and only **22.1%** countries allowed for Joint Adoption for LGBTQ couples. This could cause some very ridiculous and awful situation. For example, in some same-sex marriage  illegal countries, LGBTQ couples are not recognized by law, not only they can not adopt child for fostering, a even more severe concequence is, If one partner dies, the property cannot be inherited by the other partner, but instead forced to be inherited by other relatives by blood. 
+
+
+    One thing that seems \"optimistic\" from above is that only **6%** countries have banned the conversion therapies. However, this is not really the case, even those countries do not explicitly ban the therapy, the conversion is still illegal in some countries, and some transgenders could lose their legally recognized identity information after conversion, which could restrict all aspects of their social life. Moreover, if the countries do not standardise conversion therapy, some private clinics could carry out high-risk surgery for profit.
+    "
+
+    title_2_0: "Quantifying the acceptance level"
+    body_2_0: "
+    To better visualize the policies of different counrties, we decide to quantitize different values of each policies. Specifically, we divide policies into two categories as benefit policies and penalty policies. For example, for the \"Employment Protection\" policy, we give a score 2 for countries with such policy, **1** for those with limited (incomplete) policy and **0** for those without. And we assign different negative scores for different penalty policies. Overall we control the scores in every country falling in the range of **[-16, 16]**, and finally depict in the world map:
+    "
+    body_2_1: "
+    It seems like most **LGBTQ-friendly** countries are located at the Western Europe, North/South America, South Africa and Oceania. And most Asia show **neutral or slightly positive** acceptance scores, while most of **LGBTQ-unfriendly** countries are located in Mid-east, North and East Africa.
+    "
+
+    title_3_0: "What might be the factors?"
+    body_3_0: "
+    We are wondering what factor could cause the differences in these countries, which may further guide us for coming up with possible solutions.
+    "
+    subtitle_3_0: "Economical Situation"
+    body_3_1: "
+    At first glance of the LGBTQ acceptance score map, most developed countries are LGBTQ-friendly, from such fact we want to know whether a country's economical situation is positively related to its LGBTQ acceptance score. 
+
+
+    Here we conduct the regression analysis for different regions in the world, and choose the independent variable to be GDP per-capita instead of overall GDP score, as the latter could be largely affected by the country size and populations.
+    "
+    body_3_2: "
+    Just like what we have expected, regression coefficients in most countries are positive, while there are two exeptions: North America and Latin America & Caribbean. The coefficient in North America is trivial as there only two contries with already very positive LGBTQ scores, while only varies in one policy. And the situation in Latin America & Caribbean is a bit more complex, as from the world map these area are mostly LGBTQ-friendly, but there are several tiny regions and island countries, which we believe could involve other main factors such as culture and isolation.
+    "
+
+    subtitle_3_1: "Education Level"
+    body_3_3: "
+    Secondly, we explore the relationship between the education level and acceptance of LGBTQ, we conduct the regression analysis between the education ratio for population over 25 years old with respect to two education levels: secondary education and bachelor education. 
+    "
+    body_3_4: "
+    Here the trend is more clear, **both education levels have positive coefficient with LGBTQ acceptance scores**. And if we look at the countries with more than 80% 25+ population received at least secondary education, there is only **1** country with negative acceptance score, while all other **18** countries are all LGBTQ-friendly.
+    "
+    section: world
+
+# ----------------------------- Client Section -----------------------------
 
   clients:
     section: clients
     max-height: 100px
     horizontal-scrolling: "yes" #"yes/no"
     list:
-      - title: "ada"
+      - title: "envato"
         url: https://dlab.epfl.ch/teaching/fall2021/cs401/
         logo: assets/img/clients/dlab.svg
-      - title: "github"
-        url: https://github.com/epfl-ada/ada-2021-project-decls
-        logo: assets/img/clients/github.jpeg
+      - title: "designmodo"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/designmodo.jpg
       - title: "themeforest"
         url: https://github.com/raviriley/agency-jekyll-theme
         logo: assets/img/clients/themeforest.jpg
@@ -131,6 +313,21 @@ en: &DEFAULT_EN
         social:
           - url: https://twitter.com
             icon: fab fa-github
+
+  contact:
+    title: "Contact Us"
+    text: "Lorem ipsum or call 123456789"
+    section: contact
+    name: "Name*"
+    name-validation: "Please enter your name."
+    email: "Email*"
+    email-validation: "Please enter your email address."
+    phone: "Phone Number"
+    phone-validation: "Please enter your phone number."
+    message: "Message*"
+    message-validation: "Please enter a message."
+    subject: "Contact Form Submission"
+    submit: "Send Message"
 
   footer:
     legal: "Privacy Policy"

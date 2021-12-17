@@ -15,8 +15,8 @@ en: &DEFAULT_EN
       section: services
     - title: "About"
       section: about
-    - title: "Aboutx"
-      section: aboutx
+    - title: "Topics"
+      section: topics
     - title: "Team"
       section: team
     - title: "Code Source"

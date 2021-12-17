@@ -1,0 +1,162 @@
+<section class="page-section" id="{{ site.data.sitetext[site.locale].world.section | default: "world" }}">
+    <!-- Big picture head -->
+    <header class="masthead3">
+      <div class="container">
+        <div class="intro-text">
+      {%- if site.data.sitetext[site.locale].header_world.title -%}
+          <div class="intro-lead-in">{{ site.data.sitetext[site.locale].header_world.title | markdownify }}</div>
+      {%- endif -%}
+      {%- if site.data.sitetext[site.locale].header_world.text -%}
+          <div class="intro-heading text-uppercase">{{ site.data.sitetext[site.locale].header_world.text | markdownify }}</div>
+      {%- endif -%}
+        </div>
+      </div>
+    </header>
+    
+    <!-- 0.intro -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mx-auto text-justify">
+          <div class="large text-muted">{{ site.data.sitetext[site.locale].world.body_0 | markdownify }}</div>
+        </div>
+      </div>
+
+<!-- 1.Policy proportion -->
+<div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h3 class="section-heading text-uppercase">&nbsp</h3>
+        <h3 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].world.title_1_0 | default: "" }}</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 mx-auto text-justify">
+        <div class="large text-muted">{{ site.data.sitetext[site.locale].world.body_1_0 | markdownify }}</div>
+      </div>
+        <table class="col-lg-10 table table-striped table-sm" align="center">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Policy</th>
+            <th scope="col">Explaination</th>
+          </tr>
+        </thead>
+            <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>CSSSA Legal</td>
+            <td>Criminalisation of Consensual Same-Sex Sexual Acts between Adults</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Penalty</td>
+            <td>Penalty toward LGBTQ people prescribed by law            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Constitutional Protection</td>
+            <td>Whether constitutional rights protected by law</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Broad Protection</td>
+            <td>Whether have law-based right protection</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Employment Protection</td>
+            <td>Whether protect the employment right</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Ban Conversion Therapies</td>
+            <td>Whether sex conversion therapies is banned</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Allow Same-Sex Marriage</td>
+            <td>Whether LGBTQ legal partner recognized by law</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Allow Joint Adoption</td>
+            <td>Whether allow joint adoption by a same-sex couple</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Allow Second Parent Adoption</td>
+            <td>Whether allow adoption adoption by one partner of the other's biological child</td>
+          </tr>
+            </tbody>
+        </table>
+      <div class="col-lg-10 mx-auto text-center">
+        <iframe scrolling="no" style="border:none;" seamless="seamless" src="/plotly/policy_proportion.html" height="800" width="120%"></iframe>
+      </div>
+      <div class="col-lg-12 mx-auto text-justify">
+        <div class="large text-muted">{{ site.data.sitetext[site.locale].world.body_1_1 | markdownify }}</div>
+      </div>
+    </div>
+
+<!-- 2.World Map -->
+<div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h3 class="section-heading text-uppercase">&nbsp</h3>
+        <h3 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].world.title_2_0 | default: "" }}</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 mx-auto text-justify">
+        <div class="large text-muted">{{ site.data.sitetext[site.locale].world.body_2_0 | markdownify }}</div>
+      </div>
+      <div class="col-lg-12 mx-auto text-center">
+        <iframe scrolling="no" style="border:none;" seamless="seamless" src="/plotly/policy_world.html" height="600" width="120%"></iframe>
+      </div>
+      <div class="col-lg-12 mx-auto text-justify">
+        <div class="large text-muted">{{ site.data.sitetext[site.locale].world.body_2_1 | markdownify }}</div>
+      </div>
+    </div>
+
+<!-- 2.Factor analysis -->
+<div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h3 class="section-heading text-uppercase">&nbsp</h3>
+        <h3 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].world.title_3_0 | default: "" }}</h3>
+      </div>
+      <div class="col-lg-12 mx-auto text-justify">
+        <div class="large text-muted">{{ site.data.sitetext[site.locale].world.body_3_0 | markdownify }}</div>
+      </div>
+    </div>
+    <!-- subtitle 1 -->
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h4 class="section-heading text-uppercase">&nbsp</h4>
+            <h4 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].world.subtitle_3_0 | default: "" }}</h4>
+        </div>
+        <div class="col-lg-12 mx-auto text-justify">
+            <div class="large text-muted">{{ site.data.sitetext[site.locale].world.body_3_1 | markdownify }}</div>
+        </div>
+        <div class="col-lg-10 mx-auto text-center">
+            <iframe scrolling="no" style="border:none;" seamless="seamless" src="/plotly/regression_gdp.html" height="500" width="120%"></iframe>
+        </div>
+        <div class="col-lg-12 mx-auto text-justify">
+            <div class="large text-muted">{{ site.data.sitetext[site.locale].world.body_3_2 | markdownify }}</div>
+        </div>
+    </div>
+    <!-- subtitle 2 -->
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h4 class="section-heading text-uppercase">&nbsp</h4>
+            <h4 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].world.subtitle_3_1 | default: "" }}</h4>
+        </div>
+        <div class="col-lg-12 mx-auto text-justify">
+            <div class="large text-muted">{{ site.data.sitetext[site.locale].world.body_3_3 | markdownify }}</div>
+        </div>
+        <div class="col-lg-10 mx-auto text-center">
+            <iframe scrolling="no" style="border:none;" seamless="seamless" src="/plotly/regression_education.html" height="500" width="120%"></iframe>
+        </div>
+        <div class="col-lg-12 mx-auto text-justify">
+            <div class="large text-muted">{{ site.data.sitetext[site.locale].world.body_3_4 | markdownify }}</div>
+        </div>
+    </div>

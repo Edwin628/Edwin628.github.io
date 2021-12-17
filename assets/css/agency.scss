@@ -12,6 +12,8 @@ $black: {{ site.data.style.black | default: "#000" }} !default;
 
 // Custom Images
 $header-image: "{{ site.data.style.header-image }}";
+$topic-image: "{{ site.data.style.topic-image }}";
+$world-image: "{{ site.data.style.world-image }}";
 $contact-image: "{{ site.data.style.contact-image }}";
 
 // Global CSS
@@ -25,6 +27,7 @@ $contact-image: "{{ site.data.style.contact-image }}";
 // Layout
 @import "layout/masthead.scss";
 @import "layout/masthead2.scss";
+@import "layout/masthead3.scss";
 @import "layout/services.scss";
 @import "layout/portfolio.scss";
 @import "layout/timeline.scss";

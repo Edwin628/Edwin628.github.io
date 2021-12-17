@@ -1,14 +1,14 @@
-// Styling for the masthead
-header.masthead {
+header.masthead3 {
   text-align: center;
   color: rgb(255, 255, 255);
-  background-image: url("#{$header-image}");
+  background-image: url("#{$world-image}");
+  
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
   .intro-text {
-    color: rgb(250, 95, 95);
+    color: rgb(0, 0, 0);
     padding-top: 150px;
     padding-bottom: 100px;
     .intro-lead-in {
@@ -16,22 +16,21 @@ header.masthead {
       font-style: italic;
       line-height: 22px;
       margin-bottom: 25px;
-      // text-shadow: 2px 2px #000000;
       @include serif-font;
     }
     .intro-heading {
-      color: rgb(255, 144, 144);
+      color: rgb(255, 255, 255);
       font-size: 50px;
       font-weight: 700;
       line-height: 50px;
       margin-bottom: 25px;
-      text-shadow: 2px 2px #000000;
+      text-shadow: 3px 3px #000000;
       @include heading-font;
     }
   }
 }
 @media (min-width: 768px) {
-  header.masthead {
+  header.masthead3 {
     .intro-text {
       padding-top: 300px;
       padding-bottom: 200px;
@@ -52,4 +51,3 @@ header.masthead {
     }
   }
 }
-
