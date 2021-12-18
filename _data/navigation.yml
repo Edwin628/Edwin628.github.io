@@ -20,7 +20,7 @@ en: &DEFAULT_EN
     - title: "Team"
       section: team
     - title: "Code Source"
-      url: https://github.com/raviriley/agency-jekyll-theme/
+      url: https://github.com/epfl-ada/ada-2021-project-decls
 en-US:
   <<: *DEFAULT_EN
 en-CA:
